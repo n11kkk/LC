@@ -1,4 +1,3 @@
-import math
 class Solution:
     def numIdenticalPairs(self, nums: List[int]) -> int:
         # ans = 0
@@ -15,5 +14,5 @@ class Solution:
                 counts[i] = 1
         ans = 0
         for i in counts.values():
-            ans+=math.comb(i,2)
+            ans+=(i)*(i-1)//2
         return ans

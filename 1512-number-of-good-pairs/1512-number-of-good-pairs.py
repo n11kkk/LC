@@ -15,6 +15,5 @@ class Solution:
                 counts[i] = 1
         ans = 0
         for i in counts.values():
-            if(i>=2):
-                ans+=math.comb(i,2)
+            ans+=math.comb(i,2)
         return ans

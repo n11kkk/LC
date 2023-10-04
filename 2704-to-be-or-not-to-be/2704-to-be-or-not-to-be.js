@@ -3,25 +3,20 @@
  * @return {Object}
  */
 var expect = function(val) {
-    const objj = {
-        toBe:function(value){
+    return {
+        toBe:(value)=>{
             if(val === value){
                 return true;
             }
-            else{
                 throw new Error("Not Equal");
-            }
         },
-        notToBe:function(value){
+        notToBe:(value)=>{
             if(val!==value){
                     return true;
             }
-            else{
                 throw new Error("Equal");
-            }
         }
     }
-    return objj
 };
 
 /**
